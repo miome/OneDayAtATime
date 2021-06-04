@@ -1,0 +1,5 @@
+/home/saewill/Projects/OneDayAtATime/OneDayAtATime/bin/Debug/OneDayAtATime.dll
+/home/saewill/Projects/OneDayAtATime/OneDayAtATime/bin/Debug/OneDayAtATime.pdb
+/home/saewill/Projects/OneDayAtATime/OneDayAtATime/obj/Debug/OneDayAtATime.csproj.CoreCompileInputs.cache
+/home/saewill/Projects/OneDayAtATime/OneDayAtATime/obj/Debug/OneDayAtATime.dll
+/home/saewill/Projects/OneDayAtATime/OneDayAtATime/obj/Debug/OneDayAtATime.pdb
