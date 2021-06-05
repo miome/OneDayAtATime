@@ -15,19 +15,28 @@ namespace OneDayAtATime
         *********/
         /// <summary>The mod entry point, called after the mod is first loaded.</summary>
         /// <param name="helper">Provides simplified APIs for writing mods.</param>
+
         public override void Entry(IModHelper helper)
         {
-            helper.Events.GameLoop.Saved += this.onSaved;
+            // event += method to call
+            helper.Events.GameLoop.DayStarted += this.OnDayStarted;
         }
 
+        private int daysPlayed = 0;
+        private static readonly int maxDaysPlayed = 1;
 
-        /*********
-        ** Private methods
-        *********/
-        private void onSaved(object sender, SavedEventArgs e)
+        /// <summary>The method called after a new day starts.</summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event arguments.</param>
+        private void OnDayStarted(object sender, DayStartedEventArgs e)
         {
-            System.Environment.Exit(0);
+
+            if (daysPlayed >= maxDaysPlayed)
+            {
+                Game1.quit = true;
+            }
+            daysPlayed += 1;
 
         }
     }
-}
+    }
